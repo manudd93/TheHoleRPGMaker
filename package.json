@@ -3,7 +3,7 @@
     "main": "index.html",
     "chromium-args": "--force-color-profile=srgb",
     "window": {
-        "title": "The Hole",
+        "title": "",
         "width": 1024,
         "height": 620,
         "position": "center",
