@@ -108,6 +108,6 @@ null,
 {"id":106,"atypeId":0,"description":"Amuleto conferito dal rione verde ti consente di aumentare il tuo arcano di 2","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":2130,"name":"Amuleto rione blu","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
 {"id":107,"atypeId":0,"description":"Amuleto conferito dal rione verde ti consente di aumentare la tua sopravvivenza di 2 ","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":2129,"name":"Amuleto rione rosso","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
 {"id":108,"atypeId":0,"description":"Amuleto conferito dal rione verde ti consente di aumentare la tua brutalità di 2","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":2133,"name":"Amuleto rione bianco","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":109,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":109,"atypeId":1,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":2023,"name":"Vecchia veste","note":"","params":[0,0,0,12,0,0,5,0],"price":0},
 {"id":110,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
 ]
