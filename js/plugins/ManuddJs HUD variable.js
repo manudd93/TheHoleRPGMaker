@@ -1,75 +1,52 @@
 /*:
  * @target MZ
- * @plugindesc Mostra un semplice HUD con tre variabili personalizzate sullo schermo - Brutalità, Sopravvivenza, Arcano
- * @author Manudd
+ * @plugindesc Mostra una finestra nel menu con variabili: Brutalità, Sopravvivenza, Arcano, Carisma - stile RPG classico
+ * @author UltraLord
  */
 
 (() => {
-   const hudX = 10; // Posizione X sullo schermo
-   const hudY = 10 // Posizione Y sullo schermo
-   const lineHeight = 16; // Altezza delle righe di testo
+    // === Finestra custom ===
+    class Window_VariableDisplay extends Window_Base {
+        constructor(x, y, width, height) {
+            super(new Rectangle(x, y, width, height));
+            this.refresh();
+        }
 
-   class VariableHUD extends Sprite {
-       constructor() {
-           super(new Bitmap(300, 100));
-           this.x = hudX;
-           this.y = hudY;
-           this.updateText();
-       }
+        refresh() {
+            this.contents.clear();
+            const v = $gameVariables._data;
+            const labels = [
+                { name: "Brutalità", id: 4 },
+                { name: "Sopravvivenza", id: 6 },
+                { name: "Arcano", id: 9 },
+                { name: "Carisma", id: 5 },
+                { name: "Destino", id: 1 }
 
-       updateText() {
-    
-        const v = $gameVariables._data;
-        const b = this.bitmap;
-        b.clear();
-    
-        const width = 150;
-        const height = 250;
-        const borderSize = 5;
-        const borderColor = "#0e1144";
-        const backgroundColor = "#871d1d";
-        const fontSize = 16;
-        const lineSpacing = 2
-    
-        // Sfondo
-        b.fillRect(0, 0, width, height, backgroundColor);
-    
-        // Cornice
-        b.fillRect(0, 0, width, borderSize, borderColor); // top
-        b.fillRect(0, height - borderSize, width, borderSize, borderColor); // bottom
-        b.fillRect(0, 0, borderSize, height, borderColor); // left
-        b.fillRect(width - borderSize, 0, borderSize, height, borderColor); // right
-    
-        // Testo
-        b.fontSize = fontSize;
-        b.textColor = "#ffffff";
-    
-        const labels = [
-            { name: "Brutalità", id: 4 },
-            { name: "Sopravvivenza", id: 6 },
-            { name: "Arcano", id: 9 },
-            { name: "Carisma", id: 5 }, // nuova variabile!
-            { name: "Karma", id: 1 }
-        ];
-    
-        let y = 8;
-        for (const label of labels) {
-            const value = v[label.id] || 0;
-            b.drawText(`${label.name}: ${value}`, 10, y, width - 20, fontSize + 4, "left");
-            y += fontSize + lineSpacing;
+            ];
+
+            let y = 0;
+            for (const label of labels) {
+                const value = v[label.id] || 0;
+                this.drawText(`${label.name}:`, 0, y, 120, "left");
+                this.drawText(value, 120, y, 60, "right");
+                y += this.lineHeight();
+            }
         }
     }
 
-       update() {
-           super.update();
-           this.updateText();
-       }
-   }
+    // === Aggiunta alla scena del menu ===
+    const _Scene_Menu_create = Scene_Menu.prototype.create;
+    Scene_Menu.prototype.create = function() {
+        _Scene_Menu_create.call(this);
+        this.createVariableWindow();
+    };
 
-   const _Scene_Map_createAllWindows = Scene_Map.prototype.createAllWindows;
-   Scene_Map.prototype.createAllWindows = function() {
-       _Scene_Map_createAllWindows.call(this);
-       this._variableHUD = new VariableHUD();
-       this.addChild(this._variableHUD);
-   };
+    Scene_Menu.prototype.createVariableWindow = function() {
+        const x = 565;
+        const y = this._commandWindow.height - 184; // sotto al menu principale
+        const width = 250;
+        const height =  this.calcWindowHeight(4, true); // 4 righe
+        this._variableWindow = new Window_VariableDisplay(x, y, width, height);
+        this.addWindow(this._variableWindow);
+    };
 })();
