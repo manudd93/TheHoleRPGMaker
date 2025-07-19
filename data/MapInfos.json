@@ -41,11 +41,11 @@ null,
 {"id":39,"expanded":false,"name":"DungeonBiancoFinal","order":27,"parentId":37,"scrollX":426.6666666666667,"scrollY":198.33333333333334,"quick":false},
 {"id":40,"expanded":false,"name":"CasaAbbandonata","order":17,"parentId":25,"scrollX":356,"scrollY":425.6666666666667,"quick":false},
 {"id":41,"expanded":false,"name":"MagionePrincipale","order":46,"parentId":2,"scrollX":1084,"scrollY":917,"quick":false},
-{"id":42,"expanded":true,"name":"MontePT1","order":35,"parentId":23,"scrollX":801,"scrollY":611.25,"quick":false},
+{"id":42,"expanded":true,"name":"MontePT1","order":35,"parentId":23,"scrollX":720.8888888888889,"scrollY":789.7777777777778,"quick":false},
 {"id":43,"expanded":true,"name":"MontePT2","order":36,"parentId":42,"scrollX":880,"scrollY":640,"quick":false},
-{"id":44,"expanded":true,"name":"MontePT3","order":37,"parentId":43,"scrollX":832,"scrollY":624,"quick":false},
+{"id":44,"expanded":true,"name":"MontePT3","order":37,"parentId":43,"scrollX":720.8888888888889,"scrollY":624.4444444444445,"quick":false},
 {"id":45,"expanded":false,"name":"MontePT3S","order":38,"parentId":44,"scrollX":0,"scrollY":0,"quick":false},
 {"id":46,"expanded":false,"name":"MontePT4","order":39,"parentId":44,"scrollX":0,"scrollY":0,"quick":false},
-{"id":47,"expanded":true,"name":"MontePT5","order":40,"parentId":44,"scrollX":0,"scrollY":0,"quick":false},
-{"id":48,"expanded":false,"name":"MonteBOSS","order":41,"parentId":47,"scrollX":0,"scrollY":0,"quick":false}
+{"id":47,"expanded":true,"name":"MontePT5","order":40,"parentId":44,"scrollX":720.8888888888889,"scrollY":410.22222222222223,"quick":false},
+{"id":48,"expanded":false,"name":"MonteBOSS","order":41,"parentId":47,"scrollX":884.7272727272727,"scrollY":494.72727272727275,"quick":false}
 ]
