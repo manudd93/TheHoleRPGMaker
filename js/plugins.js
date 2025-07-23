@@ -26,5 +26,6 @@ var $plugins =
 {"name":"ManuddjsHPEqualizer","status":true,"description":"Equalizza gli HP di tutti gli attori e nemici in battaglia alla media totale dei loro HP attuali","parameters":{}},
 {"name":"SacrificioPlugin","status":true,"description":"Uccide un membro casuale del party e un nemico casuale, ma se il nemico è un boss, non lo uccide. Protezione boss inclusa.","parameters":{}},
 {"name":"ManuddSkillExecute","status":false,"description":"Controlla la variabile 'Arcano' prima di eseguire una skill. Se fallisce, la skill non viene usata.","parameters":{}},
-{"name":"TarotSkillCheck","status":true,"description":"Magie condizionate dal tiro degli Arcani Minori. Se il tiro è minore della variabile Arcano, la magia si attiva. (Usa tag <TarotCheck>) - by UltraLord","parameters":{}}
+{"name":"TarotSkillCheck","status":true,"description":"Magie condizionate dal tiro degli Arcani Minori. Se il tiro è minore della variabile Arcano, la magia si attiva. (Usa tag <TarotCheck>) - by UltraLord","parameters":{}},
+{"name":"MPP_MessageSE","status":true,"description":"Add the function to sound SE to [Display text].","parameters":{"Character Ses":"[\"{\\\"name\\\":\\\"SFX_RetroSinglev4\\\",\\\"volume\\\":\\\"90\\\",\\\"pitch\\\":\\\"100\\\",\\\"pan\\\":\\\"0\\\"}\"]","Se Interval":"4","Stop Se When Skip":"false"}}
 ];
