@@ -18,32 +18,37 @@
             // STEP 1: Primo lancio → chiama evento comune visivo
             if (!this._tarotStarted) {
                 this._tarotStarted = true;
-                $gameTemp.reserveCommonEvent(EVENTO_COMUNE_ID);
+                const result = Math.floor(Math.random() * 10) + 1;
+               $gameVariables.setValue(RISULTATO_VAR_ID, result);
+                 $gameTemp.reserveCommonEvent(EVENTO_COMUNE_ID);
                 this._tarotWaiting = true;
-                return;
+                            
             }
 
             // STEP 2: Dopo l’evento → ora leggiamo il risultato salvato
             if (this._tarotWaiting) {
                 this._tarotWaiting = false;
-
+                
                 const user = this.subject();
                 const tiro = $gameVariables.value(RISULTATO_VAR_ID);
                 const arcano = $gameVariables.value(ARCANO_VAR_ID);
 
                 // Mostra il confronto
-                $gameMessage.add(`${user.name()} ha estratto ${tiro}, serviva meno di ${arcano}`);
+               // $gameMessage.add(`${user.name()} ha estratto ${tiro}, serviva meno di ${arcano}`);
 
-                if (tiro >= arcano) {
+                if (tiro > arcano) {
                     $gameMessage.add(`La magia fallisce!`);
+          
                     return; // annulla effetto
                 } else {
-                    $gameMessage.add(`Successo! La magia ha effetto.`);
+                   
+                    
                 }
             }
+           
         }
 
         // STEP 3: La magia parte normalmente
-        _Game_Action_apply.call(this, target);
+      _Game_Action_apply.call(this, target);
     };
 })();

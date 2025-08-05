@@ -49,4 +49,21 @@
         this._variableWindow = new Window_VariableDisplay(x, y, width, height);
         this.addWindow(this._variableWindow);
     };
+
+//     // === Aggiunta della finestra anche in battaglia ===
+// const _Scene_Battle_createAllWindows = Scene_Battle.prototype.createAllWindows;
+// Scene_Battle.prototype.createAllWindows = function() {
+//     _Scene_Battle_createAllWindows.call(this);
+//     this.createVariableWindow();
+// };
+
+// Scene_Battle.prototype.createVariableWindow = function() {
+//     const x = -100;
+//     const y = this._statusWindow.y - this.calcWindowHeight(4, true) -210 ; // sopra la finestra dello status
+//     const width = 210;
+//     const height = this.calcWindowHeight(4, true);
+//     this._variableWindow = new Window_VariableDisplay(x, y, width, height);
+//     this.addWindow(this._variableWindow);
+// };
+
 })();
