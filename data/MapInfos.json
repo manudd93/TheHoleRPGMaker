@@ -74,8 +74,8 @@ null,
 {"id":72,"expanded":true,"name":"Prigione4","order":71,"parentId":71,"scrollX":811,"scrollY":721.5,"quick":false},
 {"id":73,"expanded":false,"name":"Prigione5","order":72,"parentId":72,"scrollX":811,"scrollY":738.5,"quick":false},
 {"id":74,"expanded":false,"name":"UscitaPrigione","order":73,"parentId":67,"scrollX":811,"scrollY":1218.5,"quick":false},
-{"id":75,"expanded":true,"name":"HUB Principale","order":74,"parentId":11,"scrollX":1946.3999999999999,"scrollY":2240.4,"quick":false},
-{"id":76,"expanded":true,"name":"HUB Rione Bianco","order":75,"parentId":75,"scrollX":1946.3999999999999,"scrollY":1088.3999999999999,"quick":false},
-{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":76,"parentId":76,"scrollX":1946.3999999999999,"scrollY":1107.6,"quick":false},
+{"id":75,"expanded":true,"name":"HUB Principale","order":74,"parentId":11,"scrollX":2433,"scrollY":1975.5,"quick":false},
+{"id":76,"expanded":true,"name":"HUB Rione Bianco","order":75,"parentId":75,"scrollX":811,"scrollY":915.5,"quick":false},
+{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":76,"parentId":76,"scrollX":869,"scrollY":986.5,"quick":false},
 {"id":78,"expanded":false,"name":"CittaDitrutta2","order":77,"parentId":77,"scrollX":0,"scrollY":0,"quick":false}
 ]
