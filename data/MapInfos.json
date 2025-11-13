@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"CasaGenerica 2","order":4,"parentId":0,"scrollX":911.9999999999999,"scrollY":514.2857142857142,"quick":false},
-{"id":2,"expanded":false,"name":"PiazzaPrincipaleOLD","order":39,"parentId":17,"scrollX":2463.6,"scrollY":2581.7999999999997,"quick":false},
+{"id":2,"expanded":true,"name":"PiazzaPrincipaleOLD","order":39,"parentId":17,"scrollX":2463.2727272727275,"scrollY":2581.636363636364,"quick":false},
 {"id":3,"expanded":true,"name":"CasaGenerica","order":22,"parentId":17,"scrollX":884.7272727272727,"scrollY":494.72727272727275,"quick":false},
 {"id":4,"expanded":true,"name":"Stazione","order":1,"parentId":0,"scrollX":893.4545454545455,"scrollY":552.5454545454546,"quick":false},
 {"id":5,"expanded":false,"name":"NegozioFortunato","order":54,"parentId":24,"scrollX":884.7272727272727,"scrollY":494.72727272727275,"quick":false},
@@ -74,8 +74,8 @@ null,
 {"id":72,"expanded":true,"name":"Prigione4","order":71,"parentId":71,"scrollX":811,"scrollY":721.5,"quick":false},
 {"id":73,"expanded":false,"name":"Prigione5","order":72,"parentId":72,"scrollX":811,"scrollY":738.5,"quick":false},
 {"id":74,"expanded":false,"name":"UscitaPrigione","order":73,"parentId":67,"scrollX":811,"scrollY":1218.5,"quick":false},
-{"id":75,"expanded":true,"name":"HUB Principale","order":74,"parentId":11,"scrollX":2433,"scrollY":1975.5,"quick":false},
-{"id":76,"expanded":true,"name":"HUB Rione Bianco","order":75,"parentId":75,"scrollX":811,"scrollY":915.5,"quick":false},
-{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":76,"parentId":76,"scrollX":869,"scrollY":986.5,"quick":false},
-{"id":78,"expanded":false,"name":"CittaDitrutta2","order":77,"parentId":77,"scrollX":0,"scrollY":0,"quick":false}
+{"id":75,"expanded":true,"name":"HUB Principale","order":74,"parentId":11,"scrollX":2432.727272727273,"scrollY":1975.0909090909092,"quick":false},
+{"id":76,"expanded":true,"name":"HUB Rione Bianco","order":75,"parentId":75,"scrollX":884.7272727272727,"scrollY":494.72727272727275,"quick":false},
+{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":76,"parentId":76,"scrollX":884.7272727272727,"scrollY":747.8181818181819,"quick":false},
+{"id":78,"expanded":false,"name":"CittaDitrutta2","order":77,"parentId":77,"scrollX":884.7272727272727,"scrollY":503.4545454545455,"quick":false}
 ]
