@@ -19,11 +19,7 @@ null,
 {"id":17,"expanded":true,"name":"InizioCitta","order":11,"parentId":11,"scrollX":884.8,"scrollY":494.8,"quick":false},
 {"id":18,"expanded":true,"name":"RioneBianco","order":23,"parentId":17,"scrollX":1228.5,"scrollY":747.75,"quick":false},
 {"id":19,"expanded":true,"name":"RioneVerde","order":63,"parentId":17,"scrollX":1271.2,"scrollY":906.8,"quick":false},
-<<<<<<< Updated upstream
 {"id":20,"expanded":false,"name":"Fogna","order":82,"parentId":11,"scrollX":811,"scrollY":453.5,"quick":false},
-=======
-{"id":20,"expanded":false,"name":"Fogna","order":82,"parentId":11,"scrollX":540.6666666666666,"scrollY":316.3333333333333,"quick":false},
->>>>>>> Stashed changes
 {"id":21,"expanded":false,"name":"RioneRosso","order":40,"parentId":2,"scrollX":1471.5,"scrollY":680.25,"quick":false},
 {"id":22,"expanded":true,"name":"RioneBlu","order":41,"parentId":2,"scrollX":904,"scrollY":1425.2,"quick":false},
 {"id":23,"expanded":true,"name":"Giardini","order":42,"parentId":2,"scrollX":884.8,"scrollY":846.8,"quick":false},
@@ -77,25 +73,13 @@ null,
 {"id":71,"expanded":true,"name":"Prigione3","order":70,"parentId":69,"scrollX":648.8,"scrollY":369.2,"quick":false},
 {"id":72,"expanded":true,"name":"Prigione4","order":71,"parentId":71,"scrollX":884.7272727272727,"scrollY":721.6363636363636,"quick":false},
 {"id":73,"expanded":false,"name":"Prigione5","order":72,"parentId":72,"scrollX":884.7272727272727,"scrollY":696.5454545454546,"quick":false},
-<<<<<<< Updated upstream
 {"id":74,"expanded":false,"name":"UscitaPrigione","order":73,"parentId":67,"scrollX":811,"scrollY":1176.5,"quick":false},
 {"id":75,"expanded":true,"name":"HUB Principale","order":74,"parentId":11,"scrollX":1776,"scrollY":1317.5,"quick":false},
 {"id":76,"expanded":true,"name":"HUB Rione Bianco","order":76,"parentId":75,"scrollX":1443,"scrollY":495.5,"quick":false},
-{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":77,"parentId":76,"scrollX":811,"scrollY":613.5,"quick":false},
-{"id":78,"expanded":false,"name":"CittaDitrutta2","order":78,"parentId":77,"scrollX":861,"scrollY":461.5,"quick":false},
+{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":77,"parentId":76,"scrollX":811,"scrollY":1265.5,"quick":false},
+{"id":78,"expanded":false,"name":"CittaDitrutta2","order":78,"parentId":77,"scrollX":869,"scrollY":733.5,"quick":false},
 {"id":79,"expanded":true,"name":"Porta BiancaRemastered","order":79,"parentId":76,"scrollX":885,"scrollY":673.5,"quick":false},
 {"id":80,"expanded":false,"name":"CasaStrega","order":80,"parentId":75,"scrollX":811,"scrollY":461.5,"quick":false},
 {"id":81,"expanded":true,"name":"ArmeriaNew","order":81,"parentId":75,"scrollX":819,"scrollY":594.5,"quick":false},
 {"id":82,"expanded":true,"name":"Birreria","order":75,"parentId":75,"scrollX":811,"scrollY":461.5,"quick":false}
-=======
-{"id":74,"expanded":false,"name":"UscitaPrigione","order":73,"parentId":67,"scrollX":655.2,"scrollY":1176.4,"quick":false},
-{"id":75,"expanded":true,"name":"HUB Principale","order":74,"parentId":11,"scrollX":2010.6666666666667,"scrollY":1177.6666666666667,"quick":false},
-{"id":76,"expanded":true,"name":"HUB Rione Bianco","order":75,"parentId":75,"scrollX":1444,"scrollY":615.3333333333334,"quick":false},
-{"id":77,"expanded":true,"name":"Citta Distrutta 1","order":76,"parentId":76,"scrollX":1092,"scrollY":1304.6666666666667,"quick":false},
-{"id":78,"expanded":false,"name":"CittaDitrutta2","order":77,"parentId":77,"scrollX":1081.3333333333333,"scrollY":1042,"quick":false},
-{"id":79,"expanded":true,"name":"Porta BiancaRemastered","order":79,"parentId":76,"scrollX":884.7272727272727,"scrollY":560.1818181818182,"quick":false},
-{"id":80,"expanded":false,"name":"CasaStrega","order":80,"parentId":75,"scrollX":1081.3333333333333,"scrollY":604.6666666666666,"quick":false},
-{"id":81,"expanded":true,"name":"ArmeriaNew","order":81,"parentId":75,"scrollX":655.2,"scrollY":686.8,"quick":false},
-{"id":82,"expanded":false,"name":"Città Distrutta 3","order":78,"parentId":77,"scrollX":811,"scrollY":453.5,"quick":false}
->>>>>>> Stashed changes
 ]
