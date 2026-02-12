@@ -42,8 +42,8 @@
     };
 
     Scene_Menu.prototype.createVariableWindow = function() {
-        const x = 565;
-        const y = this._commandWindow.height - 184; // sotto al menu principale
+        const x = 535;
+        const y = this._commandWindow.height - 201; // sotto al menu principale
         const width = 250;
         const height =  this.calcWindowHeight(4, true); // 4 righe
         this._variableWindow = new Window_VariableDisplay(x, y, width, height);
