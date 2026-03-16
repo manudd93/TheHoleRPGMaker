@@ -20,7 +20,7 @@
                 { name: "Sopravvivenza", id: 6 },
                 { name: "Arcano", id: 9 },
                 { name: "Carisma", id: 5 },
-                { name: "Destino", id: 1 }
+                { name: "Corruzione", id: 1 }
 
             ];
 
