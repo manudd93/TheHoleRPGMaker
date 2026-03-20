@@ -20,7 +20,8 @@
                 { name: "Sopravvivenza", id: 6 },
                 { name: "Arcano", id: 9 },
                 { name: "Carisma", id: 5 },
-                { name: "Corruzione", id: 1 }
+                { name: "Corruzione", id: 1 },
+                
 
             ];
 
@@ -45,7 +46,7 @@
         const x = 535;
         const y = this._commandWindow.height - 201; // sotto al menu principale
         const width = 250;
-        const height =  this.calcWindowHeight(4, true); // 4 righe
+        const height =  this.calcWindowHeight(4,true); // 4 righe
         this._variableWindow = new Window_VariableDisplay(x, y, width, height);
         this.addWindow(this._variableWindow);
     };
