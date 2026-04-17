@@ -59,10 +59,30 @@
  * @text Barra MP Y
  * @default 50
  *
- * @param BarWidth
- * @text Larghezza barre HP/MP
+ * @param BarWidthHP
+ * @text Larghezza barre HP
  * @default 150
+ * 
+ * @param BarHeightHP
+ * @text Altezza barre HP
+ * @default 20
  *
+ * @param BarWidthMP
+ * @text Larghezza barre MP
+ * @default 150
+ * 
+ * @param BarHeightMP
+ * @text Altezza barre MP
+ * @default 20
+ * 
+ * @param BarWidthCorr
+ * @text Altezza barre corruzione
+ * @default 20
+ * 
+ * @param BarHeightCorr
+ * @text Larghezza barre corruzione
+ * @default 20
+ * 
  * @param CorruptionVar
  * @text Variabile Corruzione
  * @default 1
@@ -72,7 +92,7 @@
  * @default 100
  *
  * @param CorruptionWidth
- * @text Larghezza barra Corruzione
+ * @text non utilizzare
  * @default 150
  *
  * @param CorruptionX
@@ -110,7 +130,13 @@
     const hpY = Number(p["HpBarY"]);
     const mpX = Number(p["MpBarX"]);
     const mpY = Number(p["MpBarY"]);
-    const barWidth = Number(p["BarWidth"]);
+
+    const barWidthHP = Number(p["BarWidthHP"]);
+    const barHeightHP = Number(p["BarHeightHP"]);
+    const barWidthMP = Number(p["BarWidthMP"]);
+    const barHeightMP = Number(p["BarHeightMP"]);
+    const barWidthCorr = Number(p["BarWidthCorr"]);
+    const barHeightCorr = Number(p["BarHeightCorr"]);
 
     const corruptionVar = Number(p["CorruptionVar"]);
     const corruptionMax = Number(p["CorruptionMax"]);
@@ -145,19 +171,19 @@
         this._portrait.scale.y = portraitScaleY;
         this._hudContainer.addChild(this._portrait);
 
-        // Barre HP/MP
-        this._hpBar = new Sprite(new Bitmap(barWidth, 20));
+        // Barre HP
+        this._hpBar = new Sprite(new Bitmap(barWidthHP, barHeightHP));
         this._hpBar.x = hpX;
         this._hpBar.y = hpY;
         this._hudContainer.addChild(this._hpBar);
-
-        this._mpBar = new Sprite(new Bitmap(barWidth, 20));
+        //Barre MP
+        this._mpBar = new Sprite(new Bitmap(barWidthMP, barHeightMP));
         this._mpBar.x = mpX;
         this._mpBar.y = mpY;
         this._hudContainer.addChild(this._mpBar);
 
         // Barra Corruzione
-        this._corruptionBar = new Sprite(new Bitmap(corruptionWidth, 20));
+        this._corruptionBar = new Sprite(new Bitmap(barWidthCorr, barHeightCorr));
         this._corruptionBar.x = corruptionX;
         this._corruptionBar.y = corruptionY;
         this._hudContainer.addChild(this._corruptionBar);
@@ -177,28 +203,28 @@
 
         // --- HP BAR ---
         const hpRatio = actor.hp / actor.mhp;
-        const hpWidth = Math.floor(barWidth * hpRatio);
+        const hpWidth = Math.floor(barWidthHP * hpRatio);
         const hpBmp = this._hpBar.bitmap;
         hpBmp.clear();
-        hpBmp.fillRect(0, 0, hpWidth, 20, "#FF4444");
-        hpBmp.strokeRect(0, 0, barWidth, 20, "#000000");
+        hpBmp.fillRect(0, 0, hpWidth, barHeightHP, "#FF4444");
+        hpBmp.strokeRect(0, 0, barWidthHP, barHeightHP, "#000000");
 
         // --- MP BAR ---
         const mpRatio = actor.mp / actor.mmp;
-        const mpWidth = Math.floor(barWidth * mpRatio);
+        const mpWidth = Math.floor(barWidthMP * mpRatio);
         const mpBmp = this._mpBar.bitmap;
         mpBmp.clear();
-        mpBmp.fillRect(0, 0, mpWidth, 20, "#4488FF");
-        mpBmp.strokeRect(0, 0, barWidth, 20, "#000000");
+        mpBmp.fillRect(0, 0, mpWidth, barHeightMP, "#234b91");
+        mpBmp.strokeRect(0, 0, barWidthMP, barHeightMP, "#000000");
 
         // --- CORRUZIONE ---
         const corruption = $gameVariables.value(corruptionVar);
         const cRatio = Math.min(corruption / corruptionMax, 1);
-        const cWidth = Math.floor(corruptionWidth * cRatio);
+        const cWidth = Math.floor(barWidthCorr * cRatio);
         const cBmp = this._corruptionBar.bitmap;
         cBmp.clear();
-        cBmp.fillRect(0, 0, cWidth, 20, "#AA00FF");
-        cBmp.strokeRect(0, 0, corruptionWidth, 20, "#000000");
+        cBmp.fillRect(0, 0, cWidth, barWidthCorr, "#773c47");
+        cBmp.strokeRect(0, 0, barWidthCorr, barHeightCorr, "#00000000");
     };
 
     // --- NASCONDI HUD FUORI DALLA MAPPA ---
