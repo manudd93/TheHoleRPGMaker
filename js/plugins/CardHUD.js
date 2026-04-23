@@ -39,17 +39,23 @@
  * @param Card2Y
  * @text Carta 2 Y
  * @default 50
+ * 
+ * @command delCurse
+ * @text Cancella Maledizione
+ *
+ * @command delBless
+ * @text Cancella Benedizione
  *
  * @command setCards
  * @text Cambia Carte
  *
  * @arg card1
- * @text Carta 1
+ * @text Carta 1 Maledizione
  * @type file
  * @dir img/pictures/
  *
  * @arg card2
- * @text Carta 2
+ * @text Carta 2 Benedizione
  * @type file
  * @dir img/pictures/
  * 
@@ -84,6 +90,20 @@
         currentCard2 = args.card2;
         if (SceneManager._scene._card1Sprite) {
         SceneManager._scene.updateCardHUD();
+    }
+    });
+    PluginManager.registerCommand(pluginName, "delCurse", args => {
+         currentCard1 = null;
+        
+        if (SceneManager._scene._card1Sprite) {
+        SceneManager._scene.cancelCurse();
+    }
+    });
+     PluginManager.registerCommand(pluginName, "delBless", args => {
+        currentCard2 = null;
+        
+        if (SceneManager._scene._card2Sprite) {
+        SceneManager._scene.cancelBlessing();
     }
     });
 const _Scene_Map_createAllWindows = Scene_Map.prototype.createAllWindows;
@@ -143,5 +163,20 @@ Scene_Map.prototype.createUltraHUDLayer = function() {
         this._card2Sprite.bitmap = bitmap2;
     }
     };
+ Scene_Map.prototype.cancelCurse = function() {
+       
 
+      
+        this._card1Sprite.bitmap = null;
+    
+    
+    };
+     Scene_Map.prototype.cancelBlessing = function() {
+       
+
+      
+        this._card2Sprite.bitmap = null;
+    
+    
+    };
 })();
